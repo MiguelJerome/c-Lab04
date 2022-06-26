@@ -2,7 +2,7 @@
 public class Lampe
 {
     // les methodes et les comportements de la classe Lampe 
-
+   
     // premier constructeur par defaut
     public Lampe() 
     {
@@ -12,14 +12,14 @@ public class Lampe
 
     // deuxieme contructeur
     public Lampe(bool etat)
+        : this()
     {
-       
         this._etat = etat;
-        this._couleur = "jaune";
     }
 
     // troisieme constructeur
     public Lampe(bool etat, string couleur)
+        :this(etat)
     {
         this._etat = etat;
         this._couleur = couleur;
